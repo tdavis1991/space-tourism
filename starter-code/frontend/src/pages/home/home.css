@@ -1,0 +1,40 @@
+.home_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_content_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.home_content_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.home_content_left h1 {
+  font-size: 10rem;
+  margin: 0%;
+}
+
+.home_content_left h5 {
+  font-size: 2rem;
+  margin: 0%;
+}
+
+.home_explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
