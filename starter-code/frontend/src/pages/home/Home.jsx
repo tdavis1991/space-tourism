@@ -3,15 +3,8 @@ import './home.css';
 
 const Home = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bg_home})`,
-        backgroundSize: 'cover',
-        height: '100vh',
-        width: '100%'
-      }}
-      className='home_container'
-    >
+    <div className='home_container'>
+      <img src={bg_home} alt='space' className='home_cover_image'/>
       <div className='home_content_container'>
         <div className='home_content_left'> 
           <h5>So, you want to travel to</h5>
