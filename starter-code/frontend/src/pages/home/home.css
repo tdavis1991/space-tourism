@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-img {
+.home_container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -27,8 +27,8 @@ img {
   justify-content: space-between;
   align-items: flex-end;
   color: white;
-  height: 85vh;
-  margin: 0 8rem;
+  height: 75vh;
+  margin: 0 4rem 3rem 4rem;
 }
 
 .home_content_left {
