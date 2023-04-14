@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .navbar_logo {
@@ -17,13 +18,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
-  margin: 0 4rem;
+  text-align: center;
+  width: 50%;
+  padding: 0 4rem;
+  height: 70px;
+  backdrop-filter: blur(5rem);
 }
 
 .navbar_links {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   color: #FFFFFF;
+  height: 100%;
+}
+
+.navbar_links:hover {
+  border-bottom: 3px solid white;
+}
+
+.navbar_line {
+  width: 40%;
+  position: absolute;
+  border-bottom: 1px solid white;
+  margin-left: 12rem;
+  z-index: 1;
 }

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  --primary-color: #D0D6F9
+  --primary-color: #D0D6F9;
 }

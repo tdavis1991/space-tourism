@@ -13,12 +13,6 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-}
-
-.home_container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   z-index: -1;
 }
 
@@ -41,13 +35,12 @@
 
 .home_content_left h1 {
   font-size: 150px;
-  margin: 0%;
+  margin: 2rem 0;
   font-family: 'Bellefair', serif;
 }
 
 .home_content_left h5 {
   font-size: 28px;
-  margin: 0%;
   color: var(--primary-color);
   font-family: 'Barlow Condensed', sans-serif;
 }
@@ -68,4 +61,8 @@
   color: #0B0D17;
   border-radius: 50%;
   font-family: 'Bellefair', serif;
+}
+
+.home_explore:hover {
+  cursor: pointer;
 }
