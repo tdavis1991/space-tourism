@@ -1,15 +1,18 @@
-import './destinationNav.css';
+// import './destinationNav.css';
 
-const navItems = ['Moon', 'Mars', 'Europa', 'Titan'];
+// const navItems = ['Moon', 'Mars', 'Europa', 'Titan'];
 
-const DestinationNav = () => {
-  return (
-    <div>
-      {navItems.map((item) => (
-        <a href={`/${item.toLowerCase()}`}>{item}</a>
-      ))}
-    </div>
-  )
-}
+// const DestinationNav = ({ setNavCounter }) => {
+//   return (
+//     <div className='navbar_container'>
+//       {navItems.map((item) => (
+//         {/* <a key={item} className='navbar_item' href={`destination/${item.toLowerCase()}`}>
+//           {item}
+//         </a> */}
+//         <div>{item}</div>
+//       ))}
+//     </div>
+//   )
+// }
 
-export default DestinationNav;
+// export default DestinationNav;
