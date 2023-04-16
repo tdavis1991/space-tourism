@@ -4,6 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+}
+
+.destination_container h3 {
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.destination_container h1 {
+  font-size: 6rem;
+  color: #FFFFFF;
 }
 
 .destination_cover_image {
@@ -14,4 +25,30 @@
   width: 100vw;
   overflow: hidden;
   z-index: -1;
+}
+
+.destination_right_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.destination_left_content {
+  margin: 0 2rem;
+}
+
+.destination_links {
+  display: flex;
+  color: #FFFFFF;
+}
+
+.destination_links p {
+  margin: 0 1rem;
+}
+
+.destination_links p:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }

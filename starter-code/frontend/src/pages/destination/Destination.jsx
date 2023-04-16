@@ -47,15 +47,15 @@ const Destination = () => {
     <div className='destination_container'>
       <img src={bg_destination} alt='space-destination' className='destination_cover_image' />
       <div className='destination_left_content'>
-        <h3><span>01</span> PICK YOUR DESTINATION</h3>
+        <h3><span style={{ color: '#D0D6F9' }}>01</span> PICK YOUR DESTINATION</h3>
         <img src={image} />
       </div>
       <div className='destination_right_content'>
         <div className='destination_links'>
-          <button onClick={() => setCount(0)}>MOON</button>
-          <button onClick={() => setCount(1)}>MARS</button>
-          <button onClick={() => setCount(2)}>EUROPA</button>
-          <button onClick={() => setCount(3)}>TITAN</button>
+          <p onClick={() => setCount(0)}>MOON</p>
+          <p onClick={() => setCount(1)}>MARS</p>
+          <p onClick={() => setCount(2)}>EUROPA</p>
+          <p onClick={() => setCount(3)}>TITAN</p>
         </div>
         <h1>{destination.name}</h1>
         <p>{destination.description}</p>
