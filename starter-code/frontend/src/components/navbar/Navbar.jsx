@@ -6,7 +6,7 @@ import './navbar.css';
 const navItems = [['00 Home', '/', 'home'], ['01 Destination', '/destination', 'destination'], ['02 Crew', '/crew', 'crew'], ['03 Technology', '/technology', 'technology']];
 
 const Navbar = () => {
-  const [selectedLink, setSelectedLink] = useState('')
+  const [selectedLink, setSelectedLink] = useState('');
 
   return (
     <div className='navbar_container'>

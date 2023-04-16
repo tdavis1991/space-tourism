@@ -13,10 +13,16 @@ const Destination = () => {
   const [destination, setDestination] = useState([]);
   const [count, setCount] = useState(0);
   const [image, setImage] = useState(moon);
+  const [selectedItem, setSelectedItem] = useState('moon');
 
   const updateCount = (num) => {
     setCount(num);
   };
+
+  // const handleClick = (num, dest) => {
+  //   setCount(num);
+  //   setSelectedItem(dest);
+  // }
 
   useEffect(() => {
     switch (count) {
@@ -47,8 +53,8 @@ const Destination = () => {
     <div className='destination_container'>
       <img src={bg_destination} alt='space-destination' className='destination_cover_image' />
       <div className='destination_left_content'>
-        <h3><span style={{ color: '#D0D6F9' }}>01</span> PICK YOUR DESTINATION</h3>
-        <img src={image} />
+        <h3 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '28px', marginBottom: '6rem' }}><span style={{ color: '#D0D6F9', fontWeight: 'bold' }}>01</span> PICK YOUR DESTINATION</h3>
+        <img src={image} className='destination_image' />
       </div>
       <div className='destination_right_content'>
         <div className='destination_links'>
@@ -57,17 +63,17 @@ const Destination = () => {
           <p onClick={() => setCount(2)}>EUROPA</p>
           <p onClick={() => setCount(3)}>TITAN</p>
         </div>
-        <h1>{destination.name}</h1>
-        <p>{destination.description}</p>
-        <div />
-        <div>
-          <div>
-            <p>AVG. DISTANCE</p>
-            <p>{destination.distance}</p>
+        <h1 className='destination_name'>{destination.name}</h1>
+        <p className='destination_desc'>{destination.description}</p>
+        <div style={{ borderBottom: '1px solid #979797', width: '100%', margin: '2rem 0' }} />
+        <div className='destination_time_dist_contaniner'>
+          <div className='destination_time_dist_content'>
+            <p className='destination_time_dist'>AVG. DISTANCE</p>
+            <p style={{ color: '#FFFFFF', fontSize: '28px', fontFamily: 'Bellefair, serif' }}>{destination.distance}</p>
           </div>
-          <div>
-            <p>EST. TRAVEL TIME</p>
-            <p>{destination.travel}</p>
+          <div className='destination_time_dist_content'>
+            <p className='destination_time_dist'>EST. TRAVEL TIME</p>
+            <p style={{ color: '#FFFFFF', fontSize: '28px', fontFamily: 'Bellefair, serif' }}>{destination.travel}</p>
           </div>
         </div>
       </div>
