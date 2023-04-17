@@ -2,6 +2,7 @@ import bg_home from '../../assets/home/background-home-desktop.jpg';
 import './home.css';
 
 const Home = () => {
+
   return (
     <div className='home_container'>
       <img src={bg_home} alt='space' className='home_cover_image'/>

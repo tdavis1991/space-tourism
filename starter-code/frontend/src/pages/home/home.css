@@ -61,6 +61,7 @@
   color: #0B0D17;
   border-radius: 50%;
   font-family: 'Bellefair', serif;
+  text-decoration: none;
 }
 
 .home_explore:hover {

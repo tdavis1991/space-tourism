@@ -1,0 +1,26 @@
+@import url('../../index.css');
+
+.crew_cover_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.crew_left_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.crew_role {
+  color: var(--primary-color);
+  font-family: 'Bellefair', serif;
+}
+
+.crew_name {
+  color: #FFFFFF;
+  font-family: 'Bellefair', serif;
+}
